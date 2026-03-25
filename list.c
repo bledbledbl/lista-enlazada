@@ -32,12 +32,12 @@ Node * createNode(void * data) {
 // Recuerda reservar memoria al puntero usando malloc o calloc.
 
 List * createList() {
-    List * lista = (List *) malloc(sizeof(List));
-    lista->head = NULL;
-    lista->tail = NULL;
-    lista->current = NULL;
+    List * list = (List *) malloc(sizeof(List));
+    list->head = NULL;
+    list->tail = NULL;
+    list->current = NULL;
     
-     return lista;
+    return list;
 }
 
 // 2. Programe las funciones void * firstList(List * list) y void * nextList(List * list).
@@ -45,7 +45,8 @@ List * createList() {
 //   - La segunda función retorna el dato del nodo a continuación del current y actualiza el current para que apunte a ese nodo.
 
 void * firstList(List * list) {
-    return NULL;
+    list->current = list->head;
+    if(list->current) return list->current->data;
 }
 
 void * nextList(List * list) {
