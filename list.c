@@ -50,6 +50,8 @@ void * firstList(List * list) {
 }
 
 void * nextList(List * list) {
+    
+    
     return NULL;
 }
 
