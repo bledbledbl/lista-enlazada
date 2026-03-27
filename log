@@ -109,3 +109,13 @@ list.c:50:1: error: control reaches end of non-void function [-Werror=return-typ
       | ^
 cc1: all warnings being treated as errors
 5640d06
+Fri Mar 27 02:09:31 AM UTC 2026: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+Compilation failed
+/nix/store/mkvc0lnnpmi604rqsjdlv1pmhr638nbd-binutils-2.44/bin/ld: /tmp/ccjvn50q.o: in function `test_first_next':
+/home/runner/workspace/test.c:133:(.text+0xc39): undefined reference to `nextList'
+/nix/store/mkvc0lnnpmi604rqsjdlv1pmhr638nbd-binutils-2.44/bin/ld: /home/runner/workspace/test.c:151:(.text+0xc93): undefined reference to `nextList'
+/nix/store/mkvc0lnnpmi604rqsjdlv1pmhr638nbd-binutils-2.44/bin/ld: /home/runner/workspace/test.c:161:(.text+0xcc4): undefined reference to `nextList'
+collect2: error: ld returned 1 exit status
+29d1ace
