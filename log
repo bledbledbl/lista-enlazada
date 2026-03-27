@@ -78,3 +78,12 @@ Compilation failed
 /nix/store/mkvc0lnnpmi604rqsjdlv1pmhr638nbd-binutils-2.44/bin/ld: /home/runner/workspace/test.c:161:(.text+0xca4): undefined reference to `nextList'
 collect2: error: ld returned 1 exit status
 c02c8e5
+Fri Mar 27 02:05:09 AM UTC 2026: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+/nix/store/mkvc0lnnpmi604rqsjdlv1pmhr638nbd-binutils-2.44/bin/ld: /tmp/ccIzpyp6.o: in function `test_first_next':
+/home/runner/workspace/test.c:101:(.text+0xba1): undefined reference to `firstList'
+/nix/store/mkvc0lnnpmi604rqsjdlv1pmhr638nbd-binutils-2.44/bin/ld: /home/runner/workspace/test.c:122:(.text+0xc06): undefined reference to `firstList'
+collect2: error: ld returned 1 exit status
+a6c35e0
