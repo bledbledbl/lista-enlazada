@@ -142,3 +142,26 @@ Fri Mar 27 02:11:22 AM UTC 2026:
  tests:  5|4
 total_score: 20/60
 09e8197
+Fri Mar 27 02:17:55 AM UTC 2026: 
+ list.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘lastList’:
+list.c:67:5: error: unknown type name ‘Nodo’; did you mean ‘Node’?
+   67 |     Nodo * aux = list->head;
+      |     ^~~~
+      |     Node
+list.c:67:18: error: initialization of ‘int *’ from incompatible pointer type ‘Node *’ [-Wincompatible-pointer-types]
+   67 |     Nodo * aux = list->head;
+      |                  ^~~~
+list.c:68:14: error: request for member ‘next’ in something not a structure or union
+   68 |     while(aux->next != NULL){
+      |              ^~
+list.c:69:18: error: request for member ‘next’ in something not a structure or union
+   69 |         aux = aux->next;
+      |                  ^~
+list.c:71:24: error: request for member ‘next’ in something not a structure or union
+   71 |     list->current = aux->next;
+      |                        ^~
+156131d
