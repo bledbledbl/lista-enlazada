@@ -292,3 +292,16 @@ Fri Mar 27 05:48:48 PM UTC 2026:
  tests:  11|1
 total_score: 50/60
 bc62b21
+Fri Mar 27 06:17:26 PM UTC 2026: 
+ list.c | 21 +++++++++++++++++++++
+ 1 file changed, 21 insertions(+)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:137:18: error: too few arguments to function ‘createNode’
+  137 |     Node * aux = createNode();
+      |                  ^~~~~~~~~~
+list.c:22:8: note: declared here
+   22 | Node * createNode(void * data) {
+      |        ^~~~~~~~~~
+4239330
