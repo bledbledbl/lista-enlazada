@@ -87,3 +87,14 @@ Compilation failed
 /nix/store/mkvc0lnnpmi604rqsjdlv1pmhr638nbd-binutils-2.44/bin/ld: /home/runner/workspace/test.c:122:(.text+0xc06): undefined reference to `firstList'
 collect2: error: ld returned 1 exit status
 a6c35e0
+Fri Mar 27 02:05:32 AM UTC 2026: 
+ list.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:51:1: error: control reaches end of non-void function [-Werror=return-type]
+   51 | }
+      | ^
+cc1: all warnings being treated as errors
+36feb83
