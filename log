@@ -66,3 +66,15 @@ list.c:52:1: error: "/*" within comment [-Werror=comment]
    52 | /*
 cc1: all warnings being treated as errors
 6fd56bd
+Fri Mar 27 02:04:42 AM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+/nix/store/mkvc0lnnpmi604rqsjdlv1pmhr638nbd-binutils-2.44/bin/ld: /tmp/ccJzfopD.o: in function `test_first_next':
+/home/runner/workspace/test.c:101:(.text+0xb71): undefined reference to `firstList'
+/nix/store/mkvc0lnnpmi604rqsjdlv1pmhr638nbd-binutils-2.44/bin/ld: /home/runner/workspace/test.c:122:(.text+0xbd6): undefined reference to `firstList'
+/nix/store/mkvc0lnnpmi604rqsjdlv1pmhr638nbd-binutils-2.44/bin/ld: /home/runner/workspace/test.c:133:(.text+0xc19): undefined reference to `nextList'
+/nix/store/mkvc0lnnpmi604rqsjdlv1pmhr638nbd-binutils-2.44/bin/ld: /home/runner/workspace/test.c:151:(.text+0xc73): undefined reference to `nextList'
+/nix/store/mkvc0lnnpmi604rqsjdlv1pmhr638nbd-binutils-2.44/bin/ld: /home/runner/workspace/test.c:161:(.text+0xca4): undefined reference to `nextList'
+collect2: error: ld returned 1 exit status
+c02c8e5
