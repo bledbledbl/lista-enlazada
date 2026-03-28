@@ -154,10 +154,7 @@ void * popCurrent(List * list) {
     }
     
     return aux->data;
-    
 
-    
-    return NULL;
 }
 
 void cleanList(List * list) {
